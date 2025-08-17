@@ -1,0 +1,48 @@
+.event-container {
+  padding: 20px;
+  margin: 40px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+#left-section img {
+  width: 100%;
+}
+
+/* right section start */
+
+#right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#show-total-donation {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#show-total-donation img {
+  width: 20px;
+}
+
+#right-section p {
+  font-size: 14px;
+  color: gray;
+  text-align: justify;
+}
+
+#right-section input {
+  padding: 10px;
+}
+
+#right-section button {
+  padding: 10px;
+}
+
+/* right section end */

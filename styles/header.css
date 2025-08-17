@@ -1,0 +1,61 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  
+}
+
+#navbar {
+  background-color: rgb(255, 245, 225);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px;
+}
+
+#blog-button,
+#btn-toggle-donation,
+#btn-toggle-history {
+  border: none;
+  background-color: greenyellow;
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+#nav-middle-section,
+#nav-right-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#nav-middle-section img,
+#nav-right-section img {
+  width: 24px;
+}
+
+#nav-middle-section h1 {
+  font-size: 20px;
+}
+
+/* toggle section */
+#toggle-section {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px 200px;
+  opacity: 0.97;
+}
+
+#btn-toggle-history {
+  background-color: white;
+  border: 1px solid gray;
+  color: gray;
+}
+
+

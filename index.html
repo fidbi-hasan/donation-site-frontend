@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Donation Site</title>
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <header>
+      <section id="navbar">
+        <div id="nav-left-section">
+          <button id="blog-button">Blog</button>
+        </div>
+        <div id="nav-middle-section">
+          <img src="assets/logo.png">
+          <h1>Donate Bangladesh</h1>
+        </div>
+        <div id="nav-right-section">
+          <img src="assets/coin.png">
+          <p><span class="current-balance">500000</span> BDT</p>
+        </div>
+      </section>
+      <section id="toggle-section">
+        <button id="btn-toggle-donation">Donation</button>
+        <button id="btn-toggle-history">History</button>
+      </section>
+    </header>
+    <main>
+      <section id="all-event-container">
+        <section class="event-container">
+          <div id="left-section">
+            <img src="assets/noakhali.png">
+          </div>
+          <div id="right-section">
+            <div id="show-total-donation">
+              <img src="assets/coin.png">
+              <p><span id="amount">0</span>BDT</p>
+            </div>
+            <h3>Donate for flood at Noakhali, Bangladesh</h3>
+            <p>The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will help provide essential supplies and to those affected by this disaster. Every contribution, big or small, makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+            <input type="number" id="donation-amount-noakhali" placeholder="Enter amount">
+            <button>Donate Now</button>
+          </div>
+        </section>
+
+        <section class="event-container">
+          <div id="left-section">
+            <img src="assets/feni.png">
+          </div>
+          <div id="right-section">
+            <div id="show-total-donation">
+              <img src="assets/coin.png">
+              <p><span id="amount">0</span>BDT</p>
+            </div>
+            <h3>Donate for Flood Relief in Feni,Bangladesh</h3>
+            <p>The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+            <input type="number" id="donation-amount-feni" placeholder="Enter amount">
+            <button>Donate Now</button>
+          </div>
+        </section>
+
+        <section class="event-container">
+          <div id="left-section">
+            <img src="assets/quota-protest.png">
+          </div>
+          <div id="right-section">
+            <div id="show-total-donation">
+              <img src="assets/coin.png">
+              <p><span id="amount">0</span>BDT</p>
+            </div>
+            <h3>Aid for Injured in the Quota Movement</h3>
+            <p>The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+            <input type="number" id="donation-amount-movement" placeholder="Enter amount">
+            <button>Donate Now</button>
+          </div>
+        </section>
+      </section>
+      <section id="donation-records">
+        <h1>Donation Records</h1>
+      </section>
+
+      <!-- modal start -->
+      <section id="modal-container">
+        <div id="modal-box">
+          Hello
+        </div>
+      </section>
+      <!-- modal end -->
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="scripts/toggle.js"></script>
+  </body>
+</html>
