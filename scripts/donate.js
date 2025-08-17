@@ -11,11 +11,21 @@ document.getElementById('donate-button-noakhali').addEventListener('click', () =
     return;
   }
 
+  if (donationAmount === '') {
+    alert('please enter a valid amount');
+    return;
+  }
+
   const updatedPersonalBalance = parseFloat(personalBalanceEl.innerText) - parseFloat(donationAmount);
   const updatedFundRaised = parseFloat(fundRaisedEl.innerText) + parseFloat(donationAmount);
 
   personalBalanceEl.innerText = updatedPersonalBalance;
   fundRaisedEl.innerText = updatedFundRaised;
+
+  /* show confirmation */
+  const modalContainer = document.getElementById('modal-container');
+  modalContainer.style.display = 'flex';
+  /* show confirmation */
 
   /* update records start */
   const newRecord = document.createElement('div');  
@@ -42,11 +52,21 @@ document.getElementById('donate-button-feni').addEventListener('click', () => {
     return;
   }
 
+  if (donationAmount === '') {
+    alert('please enter a valid amount');
+    return;
+  }
+
   const updatedPersonalBalance = parseFloat(personalBalanceEl.innerText) - parseFloat(donationAmount);
   const updatedFundRaised = parseFloat(fundRaisedEl.innerText) + parseFloat(donationAmount);
 
   personalBalanceEl.innerText = updatedPersonalBalance;
   fundRaisedEl.innerText = updatedFundRaised;
+
+  /* show confirmation */
+  const modalContainer = document.getElementById('modal-container');
+  modalContainer.style.display = 'flex';
+  /* show confirmation */
 
   /* update records start */
   const newRecord = document.createElement('div');  
@@ -73,11 +93,21 @@ document.getElementById('donate-button-movement').addEventListener('click', () =
     return;
   }
 
+  if (donationAmount === '') {
+    alert('please enter a valid amount');
+    return;
+  }
+
   const updatedPersonalBalance = parseFloat(personalBalanceEl.innerText) - parseFloat(donationAmount);
   const updatedFundRaised = parseFloat(fundRaisedEl.innerText) + parseFloat(donationAmount);
 
   personalBalanceEl.innerText = updatedPersonalBalance;
   fundRaisedEl.innerText = updatedFundRaised;
+
+  /* show confirmation */
+  const modalContainer = document.getElementById('modal-container');
+  modalContainer.style.display = 'flex';
+  /* show confirmation */
 
   /* update records start */
   const newRecord = document.createElement('div');  
@@ -90,4 +120,11 @@ document.getElementById('donate-button-movement').addEventListener('click', () =
   const recordsContainer = document.getElementById('donation-records-container');
   recordsContainer.prepend(newRecord);
   /* update records end */
+});
+
+
+// close confirmation button
+document.getElementById('close-confirmation').addEventListener('click', () => {
+  const modalContainer = document.getElementById('modal-container');
+  modalContainer.style.display = 'none';
 });

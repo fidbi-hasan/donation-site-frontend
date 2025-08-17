@@ -74,3 +74,48 @@
 .newRecord h3 span {
   font-style: italic;
 }
+
+/* draft */
+
+#modal-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  display: none;
+}
+
+#modal-box {
+  background-color: white;
+  width: 420px;
+  height: 330px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+#modal-box h1 {
+  font-size: 30px;
+}
+
+#modal-box img {
+  width: 30px;
+}
+
+#modal-box p strong {
+  font-size: 24px;
+}
+
+#modal-box button {
+  padding: 10px 15px;
+}
