@@ -19,7 +19,7 @@
         </div>
         <div id="nav-right-section">
           <img src="assets/coin.png">
-          <p><span class="current-balance">500000</span> BDT</p>
+          <p><span id="personal-balance">500000</span> BDT</p>
         </div>
       </section>
       <section id="toggle-section">
@@ -36,12 +36,12 @@
           <div id="right-section">
             <div id="show-total-donation">
               <img src="assets/coin.png">
-              <p><span id="amount">0</span>BDT</p>
+              <p><span id="fund-raised-amount">0</span>BDT</p>
             </div>
-            <h3>Donate for flood at Noakhali, Bangladesh</h3>
+            <h3 id="event-title">Donate for flood at Noakhali, Bangladesh</h3>
             <p>The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will help provide essential supplies and to those affected by this disaster. Every contribution, big or small, makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
             <input type="number" id="donation-amount-noakhali" placeholder="Enter amount">
-            <button>Donate Now</button>
+            <button id="donate-button">Donate Now</button>
           </div>
         </section>
 
@@ -94,5 +94,6 @@
     </footer>
 
     <script src="scripts/toggle.js"></script>
+    <script src="scripts/donate.js"></script>
   </body>
 </html>

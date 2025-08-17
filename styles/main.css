@@ -46,3 +46,24 @@
 }
 
 /* right section end */
+
+/* donation record section */
+#donation-records h1 {
+  text-align: center;
+}
+.newRecord {
+  width: 70%;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.newRecord h3 {
+  font-size: 16px;
+}
+
+.newRecord p {
+  color: gray;
+  font-size: 14px;
+}
