@@ -1,5 +1,5 @@
 const allEventContainer = document.getElementById('all-event-container');
-const donationRecords = document.getElementById('donation-records');
+const donationRecords = document.getElementById('all-donation-records');
 
 donationRecords.style.display = 'none';
 

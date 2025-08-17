@@ -48,7 +48,7 @@
 /* right section end */
 
 /* donation record section */
-#donation-records h1 {
+#all-donation-records h1 {
   text-align: center;
 }
 .newRecord {
@@ -60,10 +60,17 @@
 }
 
 .newRecord h3 {
+  color: rgb(0, 170, 0);
   font-size: 16px;
+  margin-bottom: 10px;
 }
 
 .newRecord p {
   color: gray;
-  font-size: 14px;
+  font-size: 12px;
+  text-align: right;
+}
+
+.newRecord h3 span {
+  font-style: italic;
 }
