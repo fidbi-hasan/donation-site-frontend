@@ -23,6 +23,9 @@ document.getElementById('donate-button-noakhali').addEventListener('click', () =
 
   /* add records */
   addNewRecord('donation-records-container', donationAmount, eventName);
+
+  // clear input field 
+  document.getElementById('donation-amount-noakhali').value = '';
 });
 
 // feni
@@ -50,6 +53,9 @@ document.getElementById('donate-button-feni').addEventListener('click', () => {
 
   /* add records */
   addNewRecord('donation-records-container', donationAmount, eventName);
+
+  // clear input field 
+  document.getElementById('donation-amount-feni').value = '';
 });
 
 // movement
@@ -76,6 +82,9 @@ document.getElementById('donate-button-movement').addEventListener('click', () =
 
   /* add records */
   addNewRecord('donation-records-container', donationAmount, eventName);
+
+  // clear input field 
+  document.getElementById('donation-amount-movement').value = '';
 });
 
 

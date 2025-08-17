@@ -22,6 +22,8 @@ function validateDonation(personalBalance, donationAmount) {
     alert('please enter a valid amount');
     return false;
   }
+
+  return true;
 }
 
 function addNewRecord(id, donationAmount, eventName) {
@@ -29,7 +31,7 @@ function addNewRecord(id, donationAmount, eventName) {
   newRecord.setAttribute('class', 'newRecord');
   newRecord.innerHTML = `
     <h3>BDT ${donationAmount} donated for event <span>'${eventName}'</span></h3>
-    <p>${new Date()}</p>
+    <p>${new Date().toLocaleString()}</p>
   `;
 
   const recordsContainer = document.getElementById(id);
