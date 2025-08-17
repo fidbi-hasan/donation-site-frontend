@@ -12,6 +12,18 @@ function getInputFieldValueById(id) {
   return convertedValue;
 }
 
+function validateDonation(personalBalance, donationAmount) {
+  if (donationAmount > personalBalance) {
+    alert('not enough balance!');
+    return false;
+  }
+
+  if (isNaN(donationAmount) || donationAmount <= 0) {
+    alert('please enter a valid amount');
+    return false;
+  }
+}
+
 function addNewRecord(id, donationAmount, eventName) {
   const newRecord = document.createElement('div');  
   newRecord.setAttribute('class', 'newRecord');
