@@ -4,7 +4,7 @@ document.getElementById('donate-button-noakhali').addEventListener('click', () =
   const personalBalance = getTextFieldValueById('personal-balance'); 
   const eventName = document.getElementById('event-title-noakhali').innerText;
   const fundRaised = getTextFieldValueById('fund-raised-amount-noakhali');
-  const donationAmount =getInputFieldValueById('donation-amount-noakhali');
+  const donationAmount = getInputFieldValueById('donation-amount-noakhali');
 
   if (validateDonation(personalBalance, donationAmount) === false) {
     return;
