@@ -1,0 +1,14 @@
+
+
+body {
+  padding: 100px 200px 0 200px;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

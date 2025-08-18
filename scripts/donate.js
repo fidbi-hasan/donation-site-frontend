@@ -1,6 +1,6 @@
 
 // noakhali
-document.getElementById('donate-button-noakhali').addEventListener('click', () => {
+document.getElementById('donate-button-noakhali').addEventListener('click', (e) => {
   const personalBalance = getTextFieldValueById('personal-balance'); 
   const eventName = document.getElementById('event-title-noakhali').innerText;
   const fundRaised = getTextFieldValueById('fund-raised-amount-noakhali');

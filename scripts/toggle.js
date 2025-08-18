@@ -22,3 +22,4 @@ document.getElementById('btn-toggle-donation').addEventListener('click', () => {
 document.getElementById('blog-button').addEventListener('click', () => {
   window.location.href = 'blog.html';
 });
+

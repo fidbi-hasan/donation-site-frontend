@@ -3,13 +3,19 @@
   <head>
     <title>Blogs</title>
     <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/blog.css">
+
+    <!-- tailwind  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
     <header>
       <section id="navbar">
         <div id="nav-left-section">
-          <button id="blog-button">Blog</button>
+          <button id="home-button">Home</button>
         </div>
         <a href="index.html">
           <div id="nav-middle-section">
@@ -24,10 +30,72 @@
       </section>
     </header>
     <main>
-      <h1>Blog Page</h1>
+      <h1 class="text-3xl font-bold text-center">FAQs</h1>
+
+      <!-- test -->
+      <section class="text-center mb-4">
+        <div aria-label="status" class="status status-primary"></div>
+        <div aria-label="status" class="status status-secondary"></div>
+        <div aria-label="status" class="status status-accent"></div>
+        <div aria-label="status" class="status status-neutral"></div>
+
+        <div aria-label="info" class="status status-info"></div>
+        <div aria-label="success" class="status status-success"></div>
+        <div aria-label="warning" class="status status-warning"></div>
+        <div aria-label="error" class="status status-error"></div>
+      </section>
+      <!-- test -->
+      
+      <!-- accordion start -->
+      <div class="join join-vertical bg-base-100 w-full">
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" checked="checked" />
+          <div class="collapse-title font-semibold text-2xl">
+            What is the Document Object Model (DOM)?
+          </div>
+          <div class="collapse-content text-[16px]">
+            The Document Object Model (DOM) is a programming interface for web documents, specifically HTML and XML. It represents the structure of a document as a logical tree, where each element, attribute, and piece of text is a "node" in the tree. 
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" checked="checked" />
+          <div class="collapse-title font-semibold text-2xl">
+            How do you select an element from the DOM?
+          </div>
+          <div class="collapse-content text-[16px]">
+            Selecting an element from the Document Object Model (DOM) in JavaScript involves using various methods provided by the document object, which represents the entire HTML document. These methods allow you to target elements based on their ID, class, tag name, or more complex CSS selectors. 
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" checked="checked" />
+          <div class="collapse-title font-semibold text-2xl">
+            What is event delegation in the context of the DOM, and why it is useful?
+          </div>
+          <div class="collapse-content text-[16px]">
+            TEvent delegation in the context of the Document Object Model (DOM) is a technique where a single event listener is attached to a parent element to manage events for its child elements. Instead of attaching individual event listeners to each child element, the parent element's listener leverages event bubbling to capture events that originate from its descendants.  
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" checked="checked" />
+          <div class="collapse-title font-semibold text-2xl">
+            How do you manipulate an element's attributes and styles using the DOM?
+          </div>
+          <div class="collapse-content text-[16px]">
+            Manipulating an element's attributes and styles using the Document Object Model (DOM) in JavaScript involves accessing the element and then utilizing its properties and methods. 
+          </div>
+        </div>
+      </div>     
+      <!-- accordion end -->
     </main>
     <footer>
       
     </footer>
+
+    <script>
+      // go to home page
+      document.getElementById('home-button').addEventListener('click', () => {
+        window.location.href = 'index.html';
+      });
+    </script>
   </body>
 </html>
